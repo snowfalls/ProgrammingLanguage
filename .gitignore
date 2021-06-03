@@ -1,3 +1,5 @@
 *.o
 *.out
 *.i
+.vscode/settings.json
+.gitignore
