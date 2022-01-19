@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn{
+            width: 160px;
+            height: 50px;
+        }
+        .dis{
+            width: 1600px;
+            height: 400px;
+            border: 2px solid paleturquoise;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+</head>
+<body>
+<input type="button" value="提交" class="btn">
+<div class="dis"></div>
+</body>
+<script>
+// <!--    压缩包，运行图截图-->
+    var btn = document.getElementsByClassName("btn")[0];
+    var dis = document.getElementsByClassName("dis")[0];
+    // 点击
+    btn.onclick = function () {
+        // 获取数据
+        $.get("weather.json",function (datas) {
+            // console.log(datas)
+            var date_list = [];
+            var max_tem = [];
+            var min_tem = [];
+            for(var i=0;i<datas.length;i++){
+                date_list.push(datas[i].dates);
+                max_tem.push(datas[i].max_tem);
+                min_tem.push(datas[i].min_tem);
+            }
+            // console.log(date_list,max_tem,min_tem)
+            // 1.初始化
+            var my_dis = echarts.init(dis);
+            // 2.配置
+            var option = {
+                title:{
+                    text:"未来七点成都的温度变化图"
+                },
+                legend:{
+                    left:"right"
+                },
+                xAxis:{
+                    data:date_list
+                },
+                yAxis: {},
+                series:[
+                    {
+                        name:"最高温度",
+                        type:"bar",
+                        data:max_tem
+                    },
+                    {
+                        name:"最低温度",
+                        type:"bar",
+                        data:min_tem
+                    },
+                ]
+            };
+            // 绘图
+            my_dis.setOption(option)
+        })
+    }
+
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>可视化</title>
+            <style>
+                .dis{
+                    width:300px;
+                    height:200px;
+                    border:2px solid red;
+                }
+            </style>
+            <!-- 可视化JS -->
+            <script src="js/echarts.min.js"></script>
+            <!-- jquery，js库 -->
+            <script src="js/jquery.min.js"></script>
+        <!-- Echarts可视化jS -->
+
+    </head>
+
+    <body>
+        <input type="button" value="点击" class="btn">
+        <div class="dis"></div>
+    </body>
+    <!-- 获取dish标签 -->
+    <script>
+        var dis = document.getElementsByClassName("dis")[0];
+        // console.log(dis)
+        var btn = document.getElementsByClassName("btn")[0];
+        // 点击按钮，绘图
+        // 点击鼠标左键
+        btn.onclick = function() {
+            //绘图                
+            // 1. 初始化
+            var my_dis = echarts.init(dis)
+            // 2. 参数配置
+            var option = {
+                // 标题
+                title:{
+                    text:"Echarts 可视化案例演示"
+                },
+                // 图例
+                legend:{
+                    left:"right"
+                },
+                // x轴数据
+                xAixs:{
+                    data:["python1班","python2班","python3班"]
+                },
+                // y轴数据:根据series数据自动生成的
+                yAxis:{},
+                // 数据信息
+                series:[
+                    {
+                        name:"人数",
+                        type:"bar", //柱状图
+                        data:[234, 324, 134],
+                        // 修改颜色
+                        itemStyle:{
+                            normal:{
+                                color:"blue"
+                            }
+                        }
+                    },
+                ]
+            };
+            // 3. 加载图片
+            my_dis.setOption(option);
+        }
+    </script>
+</html>
+

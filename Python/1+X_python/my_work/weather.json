@@ -1,0 +1,37 @@
+[
+  {
+    "min_tem": 21,
+    "max_tem": 29,
+    "date": "30日（今天）"
+  },
+  {
+    "min_tem": 21,
+    "max_tem": 31,
+    "date": "31日（明天）"
+  },
+  {
+    "min_tem": 22,
+    "max_tem": 31,
+    "date": "1日（后天）"
+  },
+  {
+    "min_tem": 21,
+    "max_tem": 30,
+    "date": "2日（周三）"
+  },
+  {
+    "min_tem": 20,
+    "max_tem": 29,
+    "date": "3日（周四）"
+  },
+  {
+    "min_tem": 20,
+    "max_tem": 33,
+    "date": "4日（周五）"
+  },
+  {
+    "min_tem": 20,
+    "max_tem": 33,
+    "date": "5日（周六）"
+  }
+]

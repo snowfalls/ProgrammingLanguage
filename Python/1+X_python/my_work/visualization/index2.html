@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>可视化</title>
+            <style>
+                .dis{
+                    width:300px;
+                    height:200px;
+                    border:2px solid red;
+                }
+            </style>
+            <!-- 可视化JS -->
+            <script src="js/echarts.min.js"></script>
+            <!-- jquery，js库 -->
+            <script src="js/jquery.min.js"></script>
+        <!-- Echarts可视化jS -->
+
+    </head>
+
+    <body>
+        <input type="button" value="点击" class="btn">
+        <div class="dis"></div>
+    </body>
+    <!-- 获取dish标签 -->
+    <script>
+        // 开启python自带的服务器
+        // 命令：python -m http.server 8899
+        // Termimal
+        var dis = document.getElementsByClassName("dis")[0];
+        var btn = document.getElementsByClassName("btn")[0];
+        //点击事件
+        btn.onclick = function() {
+            console.log("sds")
+            $.get("js/demo.json",function(datas) {
+                console.log(data)
+                var x_list = [];
+                var y_list = [];
+                for(var i=0; i<datas.length; i++) {
+                    x_list.push(datas[i].name);
+                    y_list.push(datas[i].value);
+                }
+                console.log(x_list,y_list,"fsfds");
+            })
+        }
+    </script>
+</html>
+

@@ -1,0 +1,5 @@
+dbc, 30, math
+wyj, 53, physics
+test, 39, geographydbc
+lly, 29, wuli
+wo, 32, check
