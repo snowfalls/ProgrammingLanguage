@@ -1,0 +1,52 @@
+{
+	"compiler": {
+		"version": "0.4.14+commit.c2215d46"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "func1",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "func2",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "Test"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0xb1547eb757a1fd1bc76a4c948da9cee447be206d7094e5db635b56cf051dd25f",
+			"urls": [
+				"bzzr://f685d766852bbb96a2fe9116123b0a0492be1bb9f5a8e1a9a51ae7d91f94d929"
+			]
+		}
+	},
+	"version": 1
+}

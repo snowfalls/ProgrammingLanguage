@@ -1,0 +1,183 @@
+{
+	"compiler": {
+		"version": "0.4.14+commit.c2215d46"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "hasEnoughFund",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "calculateRunway",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "employeeId",
+						"type": "address"
+					},
+					{
+						"name": "salary",
+						"type": "uint256"
+					}
+				],
+				"name": "updateEmployee",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "employeeId",
+						"type": "address"
+					}
+				],
+				"name": "checkEmployee",
+				"outputs": [
+					{
+						"name": "salary",
+						"type": "uint256"
+					},
+					{
+						"name": "lastPayday",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "addFund",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": true,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "getPaid",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "employees",
+				"outputs": [
+					{
+						"name": "id",
+						"type": "address"
+					},
+					{
+						"name": "salary",
+						"type": "uint256"
+					},
+					{
+						"name": "lastPayday",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "employeeId",
+						"type": "address"
+					}
+				],
+				"name": "removeEmployee",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "employeeId",
+						"type": "address"
+					},
+					{
+						"name": "salary",
+						"type": "uint256"
+					}
+				],
+				"name": "addEmployee",
+				"outputs": [],
+				"payable": false,
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hello_world.sol": "Payroll"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hello_world.sol": {
+			"keccak256": "0xec2668f76d9f9c8cd4838a62b263751447d2be0a41849b05cdd116e6e3f7826b",
+			"urls": [
+				"bzzr://902a01f08f6305a1bdf006788776dbf0b73f09474fbdeea812657f258bb992ca"
+			]
+		}
+	},
+	"version": 1
+}

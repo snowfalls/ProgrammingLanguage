@@ -55,9 +55,9 @@
 	},
 	"sources": {
 		"hello_world.sol": {
-			"keccak256": "0x860a54e8418e225c437bd02a32ba652b2083dcbb9dbbfcfe67ad9b7022776deb",
+			"keccak256": "0x4570d5c83f21cdeb128964c28666d45fc3a1afb85a97f8ac909deab1777cd5da",
 			"urls": [
-				"bzzr://bf2ce368d6d9f084ff0b5653ad830b91efdb570269bbb3d64756daf56a8959ea"
+				"bzzr://ec4d0c367f8ebf3c959fd83f7340462e4cee537640298aece76f54d8f9ffdd4c"
 			]
 		}
 	},
