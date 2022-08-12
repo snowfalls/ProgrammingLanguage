@@ -3,4 +3,4 @@
 *.i
 .vscode/settings.json
 .gitignore
-
+*.exe
